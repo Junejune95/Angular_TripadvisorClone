@@ -1,0 +1,110 @@
+@import "variables";
+
+.logo__img {
+    width: 180px;
+}
+
+.spacer{
+    flex-grow: 1;
+}
+
+
+// top nav bar
+ul.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navbar-collapse {
+    justify-content: end;
+}
+
+li.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary-text-color;
+    margin: 0 8px;
+    border-radius:20px ;
+    padding: 0 12px;
+}
+
+li.nav-item:hover{
+    background-color: $clearCircularButtonFillHover;
+  
+}
+
+li.nav-item > i {
+    font-size: 18px !important;
+}
+li.nav-item > a {
+    color: $primary-text-color;
+    font-weight: 500;
+    font-family: "POE Sans Pro", Arial, sans-serif;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.navbar-small{
+  display: none;
+}
+
+
+// offcanvas
+ul.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.nav-list > li{
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 12px 0;
+}
+
+ul.nav-list > li > a{
+    color: $primary-color !important;
+    text-decoration: none;
+}
+
+.nav-list > li:hover{
+    text-decoration: underline;
+
+}
+
+ul.nav-list.nav-light > li{
+    font-size: 1em !important;
+}
+ul.nav-list.nav-light > li > a{
+    color: $primary-link !important;
+}
+@media screen and (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+    }
+    .navbar-nav {
+        display: none !important;
+    }
+
+    .navbar-small{
+        display: block;
+
+    }
+    
+    .navbar-nav-small{
+        display: flex;
+    }
+
+    .spacer{
+        flex-grow: unset;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav-item > a {
+        display: none;
+    }
+}

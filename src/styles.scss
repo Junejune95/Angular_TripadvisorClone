@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import "variables";
+
+// @font-face {
+//     font-family: 'POE Sans Pro';
+//     src: url("assets/font/poe-sans-pro/POE\ Sans.ttf") format("truetype");
+//     font-weight: 400;
+// }
+
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.btn-primary {
+    border-radius: 20px !important;
+    background: $primary-color !important;
+    border: none !important;
+    width: 100%;
+}
