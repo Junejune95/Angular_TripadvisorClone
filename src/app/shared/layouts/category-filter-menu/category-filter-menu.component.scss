@@ -1,0 +1,35 @@
+@import "variables";
+
+
+.menu-card {
+    border: solid 1px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    margin-bottom: 10px !important;
+    margin: 0 7px;
+}
+
+.menu-card > h6{
+    margin-bottom: 0 !important;
+}
+
+.menu-card > i{
+    font-size: 1.2em;
+}
+
+.menu-card:hover{
+    color: $button-dark-text-color !important;
+    background-color: $secondary-button-hover;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .row{
+        flex-wrap: nowrap;
+    }
+}

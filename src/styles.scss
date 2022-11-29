@@ -8,11 +8,38 @@
 // }
 
 * {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
+    overflow-x: hidden;
 }
 .btn-primary {
     border-radius: 20px !important;
     background: $primary-color !important;
     border: none !important;
-    width: 100%;
+}
+
+.owl-prev,
+.owl-next {
+    width: 25px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    transform: translateY(-30%);
+    display: flex !important;
+    border: 0px solid black;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255 255 255 / 79%) !important;
+    margin: 0 !important;
+}
+
+.owl-prev {
+    left: 0px;
+}
+.owl-next {
+    right: 0px;
+}
+.owl-prev i,
+.owl-next i {
+    // transform: scale(2, 5);
+    color: #000000;
 }

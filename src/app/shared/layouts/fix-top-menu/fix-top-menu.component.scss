@@ -31,7 +31,7 @@ li.nav-item {
 }
 
 li.nav-item:hover{
-    background-color: $clearCircularButtonFillHover;
+    background-color: $primary-button-hover;
   
 }
 
@@ -60,14 +60,14 @@ ul.nav-list {
 }
 
 ul.nav-list > li{
-    color: #000000;
+    color: $primary-text-color;
     font-size: 1.2em;
     font-weight: 500;
     padding: 12px 0;
 }
 
 ul.nav-list > li > a{
-    color: $primary-color !important;
+    color: $primary-text-color !important;
     text-decoration: none;
 }
 
@@ -82,6 +82,7 @@ ul.nav-list.nav-light > li{
 ul.nav-list.nav-light > li > a{
     color: $primary-link !important;
 }
+
 @media screen and (max-width: 768px) {
     .navbar-toggler {
         display: block;
@@ -101,6 +102,7 @@ ul.nav-list.nav-light > li > a{
 
     .spacer{
         flex-grow: unset;
+        display: none;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
