@@ -1,0 +1,183 @@
+@import "variables";
+
+.main__wrapper {
+    height: 100%;
+}
+.fliter__wrapper {
+    background-image: url("/assets/images/bg1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    padding: 16px;
+    margin: 20px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: $primary-color;
+    background-color: white;
+    border-color: white;
+    border-bottom: solid 2px;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link {
+    color: $secondary-text-color;
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+    border: none;
+}
+
+
+
+
+// custom input box
+.has-float-label {
+    display: flex;
+    position: relative;
+    margin-bottom: 16px;
+    align-items: center;
+    border: solid 1px $fieldStokeEnable;
+    width: 100%;
+}
+
+.has-float-label > i{
+    font-size: 18px;
+    color: $fieldIcon;
+}
+.has-float-label input:hover:not(:disabled):not(:focus) {
+    border-bottom: none !important;
+}
+.has-float-label input[value=""] {
+    border-top: none !important;
+}
+
+.has-float-label input:hover:invalid:not(:placeholder-shown):not(:focus) {
+    border-bottom: none !important;
+}
+
+.has-float-label input:focus {
+    border-bottom: none !important;
+    transition: all 0.2s;
+}
+
+.has-float-label input:invalid:not(:focus) {
+    border-bottom: 2px solid #ff1744;
+}
+
+.has-float-label input:placeholder-shown:not(:focus) {
+    border-bottom: none !important;
+}
+
+/*.has-float-label input:-moz-ui-invalid {
+	border-bottom:2px solid red !important;
+}
+.has-float-label input:-moz-ui-invalid:not(:placeholder-shown) ~ .label {
+	color:red !important;
+}*/
+
+.has-float-label input:disabled {
+    border-bottom: none !important;
+    pointer-events: none;
+    background-color: inherit;
+}
+
+.has-float-label input {
+    font-size: 16px;
+    padding: 20px 0 8px 10px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: initial;
+    color: $primary-text-color;
+    caret-color: #2979ff;
+    border-bottom: none;
+    font-weight: 500;
+}
+
+input {
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    margin: 0;
+    outline: none;
+}
+
+.has-float-label input:placeholder-shown:not(:focus) + .label {
+    font-size: 16px;
+    top: 14px;
+    color: #838383;
+    left: 10px;
+}
+
+.has-float-label label,
+.has-float-label > .label {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    cursor: text;
+    font-size: 12px;
+    color: #6d6d6d;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+.has-float-label input:invalid ~ .label {
+    color: #ff1744;
+}
+
+.has-float-label input:focus ~ .label {
+    color: #2979ff;
+}
+
+.has-float-label input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
+    display: block;
+}
+.error {
+    color: #ff1744;
+    display: none;
+}
+
+.has-float-label input:invalid:not(:focus):not(:placeholder-shown) ~ .helper {
+    display: none;
+}
+.helper {
+    display: block;
+    color: #6d6d6d;
+}
+
+.helper,
+.error {
+    font-size: 12px;
+    padding-top: 8px;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited input:invalid:not(:focus) {
+    border-bottom: 2px solid red !important;
+}
+
+a:visited .helper {
+    color: #eee;
+}
+/*a {
+  background-color: white;
+  border: 1px solid white;
+}
+
+a:visited {
+  background-color: yellow;
+  border-color: hotpink;
+  color: hotpink;
+}*/
